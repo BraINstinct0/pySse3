@@ -1,3 +1,5 @@
+import random
+
 def manual_input(self_ki, oppo_ki, self_hist, oppo_hist, text="'charge':0, 'pa':3, 'energy':6, 'defense':1, 'teleport':2 :", re_text='again:'):
     move=int(input(text))
     while((not (move in (0, 1, 2, 3, 6))) or (not islegal(self_ki, move))):
